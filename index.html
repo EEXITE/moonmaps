@@ -22,71 +22,167 @@ background-color:black;
 font-family:verdana;
 }
 </style>
-  <div class="sidenav">
-<center>
-
-<a href="https://computerrinc.github.io/website/"><img src="https://computerrinc.github.io/website/Logo.png" alt="Logo"></img></a>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 
-<br>
+<body>
 
-<br>
+  <header>
+    <!--navbar controller icon-->
+    <a href="https://computerrinc.github.io/website"> <img class="logo" src="apple-touch-icon.png"  alt="logo"></a>
 
-  <a href="https://computerrinc.github.io/website/#About">About</a> 
-  <a href="https://share.hsforms.com/15VqblA2rS32p59WTYWAMawcfcx7" target="_blank">Contact</a>
-  <a href="https://computerrinc.github.io/Memojang-by-Computerrinc/" target="_blank">Memojang</a>
-                                                                                      
-  <a href="https://computerrinc.github.io/moonmaps/" target="_blank">Moon Maps</a>
-                                                                                       
-                                                                                        
- <br>
+    <nav>
+      <ul>
+        <!--navbar buttons-->
+        <!--y button-->
+        <li class="button-one"><a href="https://computerrinc.github.io/website/#About">About</a></li>
+        <!--x button-->
+        <li class="button-two"><a href="https://computerrinc.github.io/Memojang-by-Computerrinc/" target="_blank">Memojang</a></li>
+        <!--a button-->
+        <li class="button-three"><a href="https://computerrinc.github.io/moonmaps/" target="_blank">Moon Maps</a></li>
+        <!--b button-->
+        <li class="button-four"><a href="https://share.hsforms.com/15VqblA2rS32p59WTYWAMawcfcx7">Contact</a></li>
+      </ul>
+    </nav>
 
-
-</div>
-</center>
-<style>
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color:black;
-  overflow-x: hidden;
-  padding-top: 20px;
-     border: solid 1px black;
-    padding-top: 20px;
-border-top:black;
-border-left:black;
-border-right:black;
+  </header>
   
-  
+  <div id="snes-box"> 
+
+  </div>
+<STYLE>
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+
+/*header styling*/
+header {
+    background-color: black; 
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+    /*icon sizing*/
+ header img {
+   width:52px; 
+   height:52px; 
+  }
+
+/*nav button styling*/
+nav ul { 
+  list-style: none; 
+    }
+
+ nav ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.5vh;
+    }
+
+nav ul li a {
   text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
+  color: #fff;
 }
 
-.sidenav a:hover {
-  color: red;
+/*about button*/
+.button-one {
+  background-color: #3BB273;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #339963;
+  }
+
+/*projects button*/
+.button-two {
+  background-color: #4D9DE0;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #2F8DDA;
+  }
+
+/*blog button*/
+.button-three {
+  background-color: #E15554;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #DA2F2F;
+  }
+
+/*contact button*/
+.button-four {
+  background-color: #E1BC29;
+  padding: 10px 2px;
+  border-radius: 10%;
+  box-shadow: -3px 3px 3px #C4A31C;
+  }
+
+/*button click hover effect*/
+nav ul li:hover {
+  transform: scale(.9, .9);
 }
 
-.main {
-  margin-left: 160px; 
-  font-size: 28px; 
-  padding: 0px 10px;
+/*animation for icon*/
+.logo:hover {
+    animation: rumble 0.3s linear;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@keyframes rumble {
+    25% {transform: rotate(10deg);}
+    75% {transform: rotate(-20deg);}
 }
-</style>
+
+#snes-box {
+  text-align: center;
+  margin-right: 100px;
+}
+
+  #snes {
+    width: 70%;
+    height: 70%;
+    margin: 0px auto;
+  }
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        justify-content: space-between;
+  }
+ 
+  header img {
+    padding-left: 10px;
+    width: 56px;
+    height:66px;
+    }
+
+nav ul li {
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-size: 1em;
+  }
+
+@media only screen and (min-width: 1024px) {
+
+header {
+  justify-content: space-between;
+  }
+
+header img {
+  padding-left: 20px;
+  width: 72px;
+  height: 82px;
+  }
+    
+nav li {
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-size: 1.2em;
+  }
+  </STYLE>
 </body>
 </html>
 
