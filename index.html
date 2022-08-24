@@ -1,35 +1,41 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Moon maps</title>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="theme-color" content="#000000">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="black">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/7.css">
 </head>
 <body>
 
-  
-<iframe width='100%' height='700px' src="https://api.mapbox.com/styles/v1/computerrinc/ckwdy4xezb4g816mp9lykihnz.html?title=false&access_token=pk.eyJ1IjoiY29tcHV0ZXJyaW5jIiwiYSI6ImNrdzFsYjI0eGR0M3EycHBneHlsYzVxZ2cifQ.8BP2jMYHFWpijmIKlU2_Rg&zoomwheel=false#0.39/0/104.2" title="Basic" style="border:none;"></iframe>
+
+
 <style>
-body {
-background-color:black;
-font-family:verdana;
-}
 </style>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 
+<style>
+  .violet::before,
+  .violet > .title-bar {
+    background-image: linear-gradient(to right, violet, indigo, green, blue, yellow, orange, red);
+  }
+  .window-body {
+  background-color:black;
+  }
+</style>
 
+<div class="window violet" style="max-width: 3000px">
+  <div class="title-bar">
+    <div class="title-bar-text">Moon Maps</div>
+    <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+    <p>
+    <iframe width='100%' height='700px' src="https://api.mapbox.com/styles/v1/computerrinc/ckwdy4xezb4g816mp9lykihnz.html?title=false&access_token=pk.eyJ1IjoiY29tcHV0ZXJyaW5jIiwiYSI6ImNrdzFsYjI0eGR0M3EycHBneHlsYzVxZ2cifQ.8BP2jMYHFWpijmIKlU2_Rg&zoomwheel=false#0.39/0/104.2" title="Basic" style="border:none;"></iframe></p>
+  </div>
+</div>
 
- 
 </body>
 </html>
-
